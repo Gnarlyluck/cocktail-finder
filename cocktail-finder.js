@@ -4,7 +4,7 @@ const COCKTAIL_URL = `https://www.thecocktaildb.com/api/json/v1/${API_KEY}/searc
 const getCocktail = async () => {
     try{
     const response = await axios.get(COCKTAIL_URL)
-    console.log(response.data)
+    console.log(response)
     }catch(error){
     console.log(error)
     // alert('uh oh server fetch error')
