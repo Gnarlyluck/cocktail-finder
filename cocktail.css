@@ -1,4 +1,32 @@
 p {
-    color: red;
+    color: gold
+}
 
+body {
+    background-color: black;
+}
+
+header{
+    text-align: center;
+    font-size: 45px;
+    color: gold;
+}
+#cocktailImage{
+    width: 475px;
+}
+span{
+    color:gold
+}
+
+.subject{
+    color:#FFAFB6
+}
+
+.punctuation{
+    color:white
+}
+
+#cocktailImage{
+    border-width: 3px;
+    border-color: gold;
 }
