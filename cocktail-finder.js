@@ -17,18 +17,12 @@ const getCocktail = (event) => {
 
 const randomCocktail = async () => {
     try{    const response = await axios.get(`${BASE_URL}${random}`)
-    //console.log(response)
+    
     let drink = response.data.drinks[0]
-        //console.log(drink)
         let drinkName = drink.strDrink
-       // console.log(drinkName)
         let glass = drink.strGlass
-        //console.log(glass)
         let image = drink.strDrinkThumb
-       //console.log(image)
         let instructions = drink.strInstructions
-        //console.log(instructions)
-        // showDrink = ''
         let ingredient = [
             drink.strIngredient1,
             drink.strIngredient2,
@@ -46,7 +40,6 @@ const randomCocktail = async () => {
         ]
         for(let i = 0; i < ingredient.length; i++){
             if(ingredient[i] !== null){
-                //console.log(ingredient[i])
             }
             let measure = [
                 drink.strMeasure1,
@@ -66,7 +59,6 @@ const randomCocktail = async () => {
             ]
             for(let i = 0; i < measure.length; i++){
                 if(measure[i] !== null){
-                    // console.log(measure[i])
                 }
             }
             showDrink.innerHTML = 
@@ -128,6 +120,7 @@ const randomCocktail = async () => {
         }
         
         }catch(error){
+            alert('that drink is not in our database')
             console.log('random button not wokring')
         }
 }
@@ -227,6 +220,7 @@ const displayCocktail = async (userInput) => {
         showDrink.innerHTML += `<h4 class='subject'>Glass </h4><p id='glassType'>${glass}</p>`
         showDrink.innerHTML += `<h4 class='subject'>Instructions </h4><p id='preparation'>${instructions}</p>`
     }catch(error){
+        alert('That drink is not in our database')
         console.log('create cocktail not currently wokring')
     }
 
