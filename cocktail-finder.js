@@ -14,6 +14,28 @@ const getCocktail = (event) => {
     displayCocktail(userInput)
 }
 
+emptyCocktailObj = {
+    drinks: []
+}
+const randomCocktail = async () => {
+    try{    const response = await axios.get(`${BASE_URL}${random}`)
+        if (emptyCocktailObj.drinks.length > 0){
+    randomNumber = Math.floor(Math.random() * emptyCocktailObj.drinks.length - 1)
+    console.log(randomNumber) 
+    randomDrink = emptyCocktailObj.drinks[randomNumber]
+    showDrink.innerHTML = `
+    <div id='${randomDrink.idDrink}'>
+    <p id='cocktailId'>${randomDrink.idDrink}</p>
+    <p id='cocktailName'>${randomDrink.strDrink}</p>
+    <img src=${randomDrink.strDrinkThumb} id='cocktailImage'/>
+    </div>`
+    displayCocktail(`${randomDrink.idDrink}`)
+    }
+        }catch(error){
+            console.log('random button not wokring')
+        }
+}
+
 const displayCocktail = async (userInput) => {
     try{
         const response = await axios.get(`${BASE_URL}${search}${userInput}`)
@@ -120,41 +142,9 @@ const displayCocktail = async (userInput) => {
 }
 //look up a random drink name
 //see if you can return the drink AND ingredients
-emptyCocktailObj = {
-    drinks: []
-}
-const randomCocktail = async (userInput) => {
-    try{    const response = await axios.get(`${BASE_URL}${random}`)
-            if (emptyCocktailObj.drinks.length > 0){
-            randomNumber = Math.floor(Math.random() * emptyCocktailObj.length - 1)
-            randomDrink = emptyCocktailObj.drinks[randomNumber]
-            showDrink.innerHTML = `
-            <div id='${randomDrink.idDrink}'`
-            }
-        }catch(error){
-            console.log('random button not wokring')
-        }
-        console.log(random)
-}
+
 document.querySelector('input').addEventListener('input', updateValue)
-document.querySelector('.cocktailbtn').addEventListener('click', getCocktail, 'keyup', function(e){
-    if (e.keycode === 13 ){
-        alert('lets drink')
-    }
-    }, getCocktail)
+document.querySelector('.cocktailbtn').addEventListener('click', getCocktail)
 document.querySelector('.randomCocktail').addEventListener('click', randomCocktail)    
-    // const displayCocktail = async (userInput) => {
-    //     try{
-    //         const response = await axios.get(`${BASE_URL}${search}${userInput}`)
-    //         let drink = response.data.drinks[0]
-    //         console.log(drink)
-    //         let drinkName = drink.strDrink
-    //         console.log(drinkName)
-    //         let glass = drink.strGlass
-    //         console.log(glass)
-    //         let image = drink.strDrinkThumb
-    //         console.log(image)
-    //         let instructions = drink.strInstructions
-    //         console.log(instructions)
-    //         let showDrink = document.querySelector('#showDrink')
-    //         showDrink.innerHTML = 
+    
+
