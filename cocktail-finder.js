@@ -14,23 +14,75 @@ const getCocktail = (event) => {
     displayCocktail(userInput)
 }
 
-emptyCocktailObj = {
-    drinks: []
-}
+
 const randomCocktail = async () => {
     try{    const response = await axios.get(`${BASE_URL}${random}`)
-        if (emptyCocktailObj.drinks.length > 0){
-    randomNumber = Math.floor(Math.random() * emptyCocktailObj.drinks.length - 1)
-    console.log(randomNumber) 
-    randomDrink = emptyCocktailObj.drinks[randomNumber]
-    showDrink.innerHTML = `
-    <div id='${randomDrink.idDrink}'>
-    <p id='cocktailId'>${randomDrink.idDrink}</p>
-    <p id='cocktailName'>${randomDrink.strDrink}</p>
-    <img src=${randomDrink.strDrinkThumb} id='cocktailImage'/>
-    </div>`
-    displayCocktail(`${randomDrink.idDrink}`)
-    }
+    //console.log(response)
+    let drink = response.data.drinks[0]
+        //console.log(drink)
+        let drinkName = drink.strDrink
+       // console.log(drinkName)
+        let glass = drink.strGlass
+        //console.log(glass)
+        let image = drink.strDrinkThumb
+       //console.log(image)
+        let instructions = drink.strInstructions
+        //console.log(instructions)
+        // showDrink = ''
+        let ingredient = [
+            drink.strIngredient1,
+            drink.strIngredient2,
+            drink.strIngredient3,
+            drink.strIngredient4,
+            drink.strIngredient5,
+            drink.strIngredient6,
+            drink.strIngredient7,
+            drink.strIngredient8,
+            drink.strIngredient9,
+            drink.strIngredient10,
+            drink.strIngredient11,
+            drink.strIngredient12,
+            drink.strIngredient13,
+        ]
+        for(let i = 0; i < ingredient.length; i++){
+            if(ingredient[i] !== null){
+                //console.log(ingredient[i])
+            }
+            let measure = [
+                drink.strMeasure1,
+                drink.strMeasure2,
+                drink.strMeasure3,
+                drink.strMeasure4,
+                drink.strMeasure5,
+                drink.strMeasure6,
+                drink.strMeasure7,
+                drink.strMeasure8,
+                drink.strMeasure9,
+                drink.strMeasure10,
+                drink.strMeasure11,
+                drink.strMeasure12,
+                drink.strMeasure13,
+                drink.strMeasure14,
+            ]
+            for(let i = 0; i < measure.length; i++){
+                if(measure[i] !== null){
+                    // console.log(measure[i])
+                }
+            }
+            showDrink.innerHTML = 
+            `<div class = 'showCocktail'> 
+            <p id='cocktailName'> ${drinkName}</p>
+            <img src=${image} id='cocktailImage'/>
+            
+            <h3 class='subject'> Ingredients </h3>
+            <span id='measurement1'>${drink.strMeasure1 } of </span>
+            <span id='ingredient1'>${drink.strIngredient1 },  </span>`
+            // showDrink.innerHTML =`<h3> ${ingredient}<h3>`
+
+            showDrink.innerHTML += `<h4 class='subject'>Glass </h4><p id='glassType'>${glass}</p>`
+            showDrink.innerHTML += `<h4 class='subject'>Instructions </h4><p id='preparation'>${instructions}</p>`
+        }
+        
         }catch(error){
             console.log('random button not wokring')
         }
