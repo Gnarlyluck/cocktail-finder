@@ -8,6 +8,13 @@
     <link rel="stylesheet" href="cocktail.css" />
 </head>
 <body>
+    <nav>
+        <a href="landing.html">
+            <button id="backButton">
+                <bold><~ Back</bold>
+            </button>
+        </a>
+    </nav>
     <header><em>~</em>Luckey's Cocktail Finder<em>~</em></header>
         <h2>
             <div class='interactive'>
@@ -19,13 +26,11 @@
         </h2>
         <div class='twobuttondiv'>
             <button type='submit' class=cocktailbtn>Your drink is waiting</button>
-                <button type='submit'class='randomCocktail'>I'm Feeling Luckey</button>
+            <button type='submit'class='randomCocktail'>I'm Feeling Luckey</button>
         </div>
        
         <div id="showDrink"></div>
         <div class="ingredients"></div>
-        
-
 
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="cocktail-finder.js"></script>

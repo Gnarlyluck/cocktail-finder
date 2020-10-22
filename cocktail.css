@@ -18,12 +18,22 @@ body {
     justify-content: center;
 
 }
-
+#backButton{
+    color:gold  ;
+    background-color: black;
+    height:25;
+    width:60;
+    font-family: 'Petit Formal Script', cursive;
+    outline: none;
+    border: solid;
+    border-color: gold;
+    border-width: 1px;
+}
 p{
     color: gold;
 }
 
-button, .enter{
+.cocktailbtn, .randomCocktail, .enter{
 
     align-items: center;
     width: 300px;
