@@ -39,8 +39,8 @@ const randomCocktail = async () => {
             drink.strIngredient13,
         ]
         for(let i = 0; i < ingredient.length; i++){
-            if(ingredient[i] !== null){
-            }
+            // if(ingredient[i] !== null){
+            // }
             let measure = [
                 drink.strMeasure1,
                 drink.strMeasure2,
@@ -58,8 +58,8 @@ const randomCocktail = async () => {
                 drink.strMeasure14,
             ]
             for(let i = 0; i < measure.length; i++){
-                if(measure[i] !== null){
-                }
+                // if(measure[i] !== null){
+                // }
             }
             showDrink.innerHTML = 
             `<div class = 'showCocktail'> 
@@ -113,7 +113,7 @@ const randomCocktail = async () => {
                 `<span id='measurement10'>${drink.strMeasure10 } of </span>
             <span id='ingredient10'>${drink.strIngredient10 }, </span>`
             }
-            // showDrink.innerHTML =`<h3> ${ingredient}<h3>`
+
 
             showDrink.innerHTML += `<h4 class='subject'>Glass </h4><p id='glassType'>${glass}</p>`
             showDrink.innerHTML += `<h4 class='subject'>Instructions </h4><p id='preparation'>${instructions}</p>`

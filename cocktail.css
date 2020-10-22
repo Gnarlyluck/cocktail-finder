@@ -5,7 +5,26 @@ p {
 body {
     background-color: black;
 }
-
+.enter{
+        width: 300px;
+        height: 150px;
+        font-size: 25px;
+        
+    }
+.landing{
+    background-image: url("img/Rob-Roy_2018_234338den3.jpg");
+    height: 750px;
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-color: black;
+}
+.landingH2{
+    color:gold;
+    text-align: center;
+    background-color:black ;
+    opacity: 0.8;
+    border-radius: 12px;
+}
 header{
     text-align: center;
     font-size: 45px;
