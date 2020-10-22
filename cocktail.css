@@ -10,16 +10,18 @@ body {
     background-image:linear-gradient(90deg, rgb(65, 54, 2) 0%, black 100%);
     background-size: cover;
     height: 125vmin;
-   
+    
 }
  .interactive {
-    color: gold
+    color: gold;
+    display: flex;
+    justify-content: center;
 
 }
+
 p{
-    color: gold
+    color: gold;
 }
-
 
 button, .enter{
 
@@ -52,22 +54,23 @@ button, .enter{
     border-width: 2px;
 }
 
-/*
-cannot get the border around img to show
-*/
 #cocktailInput{
+ 
     background-color: black;
-    color: gold;
+    color: #FFAFB6;
+    font-size: 18px;
     height: 35px;
+    width: 215px;
+    border: solid;
+    border-color: gold;
+    border-width: 2px;
 }
-/*can't get input bar to move!!*/
 .showCocktail{
     display: flex;
     flex-direction: column;
     align-items: center;
     font-size: 30px;
     font-family: 'Cinzel Decorative', cursive;
-
 }
 
 .subject{
@@ -82,10 +85,14 @@ cannot get the border around img to show
 #preparation{
     display: flex;
     max-width: 50%;
-align-items: center;
+    align-items: center;
+    color:gold;
     justify-content: center;
     margin-left: 25%;
-    
+    display: flex;
+    max-width: 50%;
+    align-items: center;
+    justify-content: center;
 }
 .measurement, .ingredient {
     display: flex;
@@ -100,14 +107,10 @@ span{
     color:#FFAFB6
 }
 
-
-
 .buttondiv{
    display: flex;
    justify-content: center; 
    } 
-
- 
 
 #landing{
     background-image: url("img/Rob-Roy_2018_234338den3.jpg");
@@ -119,7 +122,6 @@ span{
 .headerlandingH2{
     font-family: 'Petit Formal Script', cursive;
     display: flex;
-    
     justify-content: center;
     color:gold;
     background-color:black ;
@@ -128,7 +130,9 @@ span{
 }
 .landingH2{
     display: flex;
+    width: 40%;
     justify-content: center;
+    margin-left: 365px ;
     color:gold;
     background-color:black ;
     opacity: 0.8;
