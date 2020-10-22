@@ -18,7 +18,7 @@ const getCocktail = (event) => {
 const randomCocktail = async () => {
     try{    const response = await axios.get(`${BASE_URL}${random}`)
     
-    let drink = response.data.drinks[0]
+        let drink = response.data.drinks[0]
         let drinkName = drink.strDrink
         let glass = drink.strGlass
         let image = drink.strDrinkThumb
