@@ -1,17 +1,29 @@
+header{
+    text-align: center;
+    font-size: 45px;
+    color: gold;
+}
+body {
+    background-color: black;
+}
 p {
     color: gold
 }
 
-body {
-    background-color: black;
-}
+
 .enter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
         width: 300px;
         height: 150px;
         font-size: 25px;
+        color:gold  ;
+        background-color: black;
         font-family: 'Petit Formal Script', cursive;
+    
     }
-.landing{
+#landing{
     background-image: url("img/Rob-Roy_2018_234338den3.jpg");
     height: 750px;
     background-position: center;
@@ -19,17 +31,15 @@ body {
     background-color: black;
 }
 .landingH2{
+    display: flex;
+    justify-content: center;
+   
     color:gold;
-    text-align: center;
     background-color:black ;
     opacity: 0.8;
     border-radius: 12px;
 }
-header{
-    text-align: center;
-    font-size: 45px;
-    color: gold;
-}
+
 #cocktailImage{
     width: 475px;
 }
