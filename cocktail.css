@@ -2,6 +2,8 @@ header{
     text-align: center;
     font-size: 45px;
     color: gold;
+    font-family: 'Petit Formal Script', cursive;
+    
 }
 body {
     background-color: black;
@@ -31,6 +33,7 @@ p {
     background-color: black;
 }
 .landingH2{
+    font-family: 'Cinzel Decorative', cursive;
     display: flex;
     justify-content: center;
    
@@ -42,6 +45,18 @@ p {
 
 #cocktailImage{
     width: 475px;
+    border-radius: 45px;
+}
+.showCocktail{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 30px;
+    font-family: 'Cinzel Decorative', cursive;
+}
+.subject{
+    display: flex;
+    justify-content: center;
 }
 span{
     color:gold
