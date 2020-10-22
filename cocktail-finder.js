@@ -4,6 +4,9 @@ const random = `random.php`
 let cocktailIngredients = document.querySelector('.ingredients')
 let drinkLog = document.getElementById('cocktail-results')
 let showDrink = document.querySelector('#showDrink')
+
+
+
 function updateValue(e){
     drinkLog = e.target.value
 }

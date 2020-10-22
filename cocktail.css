@@ -7,10 +7,16 @@ header{
 }
 body {
     background-color: black;
-    background-image:linear-gradient(72deg, rgb(65, 54, 2) 0%, black 100%);
-    background-size:cover;
+    background-image:linear-gradient(90deg, rgb(65, 54, 2) 0%, black 100%);
+    background-size: cover;
+    height: 125vmin;
+   
 }
-p, .interactive {
+ .interactive {
+    color: gold
+
+}
+p{
     color: gold
 }
 
@@ -24,58 +30,37 @@ button, .enter{
     color:gold  ;
     background-color: black;
     font-family: 'Petit Formal Script', cursive;
+    outline: none;
+    border: solid;
+    border-color: gold;
+    border-width: 2px;
     }
 
 .twobuttondiv{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
+    height: 320px;
 }
-
-.buttondiv{
-   display: flex;
-   justify-content: center; 
-   } 
-
- 
-
-#landing{
-    background-image: url("img/Rob-Roy_2018_234338den3.jpg");
-    height: 750px;
-    background-position: center;
-    background-repeat: no-repeat; 
-    background-color: black;
-}
-.headerlandingH2{
-    font-family: 'Petit Formal Script', cursive;
-    display: flex;
-    
-    justify-content: center;
-    color:gold;
-    background-color:black ;
-    opacity: 0.8;
-    border-radius: 12px;
-}
-.landingH2{
-    display: flex;
-    flex-shrink: 2;
-    justify-content: center;
-    color:gold;
-    background-color:black ;
-    opacity: 0.8;
-    border-radius: 12px;
-}
-
 
 #cocktailImage{
     width: 475px;
     border-radius: 45px;
+    border: solid;
+    border-color: gold;
+    border-width: 2px;
 }
+
+/*
+cannot get the border around img to show
+*/
 #cocktailInput{
     background-color: black;
     color: gold;
     height: 35px;
 }
+/*can't get input bar to move!!*/
 .showCocktail{
     display: flex;
     flex-direction: column;
@@ -115,11 +100,37 @@ span{
     color:#FFAFB6
 }
 
-.punctuation{
-    color:white
-}
 
-#cocktailImage{
-    border-width: 3px;
-    border-color: gold;
+
+.buttondiv{
+   display: flex;
+   justify-content: center; 
+   } 
+
+ 
+
+#landing{
+    background-image: url("img/Rob-Roy_2018_234338den3.jpg");
+    height: 750px;
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-color: black;
+}
+.headerlandingH2{
+    font-family: 'Petit Formal Script', cursive;
+    display: flex;
+    
+    justify-content: center;
+    color:gold;
+    background-color:black ;
+    opacity: 0.8;
+    border-radius: 12px;
+}
+.landingH2{
+    display: flex;
+    justify-content: center;
+    color:gold;
+    background-color:black ;
+    opacity: 0.8;
+    border-radius: 12px;
 }
