@@ -46,8 +46,10 @@ strMeasure6 : "1" ,
 * To help bartenders with undecided customers by telling them to check out Luckeycocktailfinder.com (domain rights pending)
 * To provide a fun drink choosing expierience
 
-## my wire frame
-<!-- ![wire frame image](./img/wire.png) -->
+## My wire frame
+![wire frame image](./img/wire600.png)
+## My finsihed product
+![my finished product](./img/finished.png)]
 ## TECHNOLOGY USED
 ![](./img/html-css-js.png)
 * [img source](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwebinlinedev.com%2Fwhat-are-html-css-and-javascript-and-what-can-you-do-with-it%2F&psig=AOvVaw1-XjGGdkEQON3tzeaMUvBQ&ust=1603135692357000&source=images&cd=vfe&ved=0CAMQjB1qFwoTCPjj-YDwvuwCFQAAAAAdAAAAABAT)
