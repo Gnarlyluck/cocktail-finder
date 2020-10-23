@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Petit+Formal+Script&display=swap" href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luckey's Cocktail finder</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <nav>
+        <a href="index.html">
+            <button id="backButton">
+                <bold><~ Back</bold>
+            </button>
+        </a>
+    </nav>
+    <header><em>~</em>Luckey's Cocktail Finder<em>~</em></header>
+        <h2>
+            <div class='interactive'>
+
+               Search:  <input type="text" id='cocktailInput' placeholder="Enter Cocktail Name"/>
+                <p id='cocktail-results'></p>
+                
+            </div>
+        </h2>
+        <div class='twobuttondiv'>
+            <button type='submit' class=cocktailbtn>Your drink is waiting</button>
+            <button type='submit'class='randomCocktail'>I'm Feeling Luckey</button>
+        </div>
+       
+        <div id="showDrink"></div>
+        <div class="ingredients"></div>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
