@@ -12,28 +12,11 @@ body {
     height: 125vmin;
     
 }
- .interactive {
-    color: gold;
-    display: flex;
-    justify-content: center;
-
-}
-#backButton{
-    color:gold  ;
-    background-color: black;
-    height:25;
-    width:60;
-    font-family: 'Petit Formal Script', cursive;
-    outline: none;
-    border: solid;
-    border-color: gold;
-    border-width: 1px;
-}
 p{
     color: gold;
 }
 
-.cocktailbtn, .randomCocktail, .enter{
+.enter{
 
     align-items: center;
     width: 300px;
@@ -55,68 +38,6 @@ p{
     justify-content: space-between;
     height: 320px;
 }
-
-#cocktailImage{
-    width: 475px;
-    border-radius: 45px;
-    border: solid;
-    border-color: gold;
-    border-width: 2px;
-}
-
-#cocktailInput{
- 
-    background-color: black;
-    color: #FFAFB6;
-    font-size: 18px;
-    height: 35px;
-    width: 215px;
-    border: solid;
-    border-color: gold;
-    border-width: 2px;
-}
-.showCocktail{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 30px;
-    font-family: 'Cinzel Decorative', cursive;
-}
-
-.subject{
-    display: flex;
-    justify-content: center;
-    font-size: 24px;
-}
-#glassType{
-    display: flex;
-    justify-content: center;
-}
-#preparation{
-    display: flex;
-    max-width: 50%;
-    align-items: center;
-    color:gold;
-    justify-content: center;
-    margin-left: 25%;
-    display: flex;
-    max-width: 50%;
-    align-items: center;
-    justify-content: center;
-}
-.measurement, .ingredient {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-}
-span{
-    color:gold
-}
-
-.subject{
-    color:#FFAFB6
-}
-
 .buttondiv{
    display: flex;
    justify-content: center; 
@@ -141,8 +62,8 @@ span{
 .landingH2{
     display: flex;
     width: 40%;
-    justify-content: center;
-    margin-left: 550px ;
+    margin-bottom: 15px;
+    /* justify-content:first baseline; */
     color:gold;
     background-color:black ;
     opacity: 0.8;
