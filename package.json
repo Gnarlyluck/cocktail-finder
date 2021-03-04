@@ -1,0 +1,30 @@
+{
+  "name": "cocktail-finder",
+  "version": "1.0.0",
+  "description": "Search your favorite cocktails or choose a random one",
+  "main": "script.js",
+  "scripts": {
+    "test": "none"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gnarlyluck/cocktail-finder.git"
+  },
+  "keywords": [
+    "none"
+  ],
+  "author": "Schuyler luckey",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gnarlyluck/cocktail-finder/issues"
+  },
+  "homepage": "https://github.com/Gnarlyluck/cocktail-finder#readme",
+  "devDependencies": {
+    "git-scripts": "^0.4.3",
+    "surge": "^0.21.7"
+  },
+  "git": {
+    "pre-push": "surge cocktail-finder ./ http://shoescocktailfinder.surge.sh/main.html"
+
+  }
+}

@@ -8,6 +8,7 @@
     border: solid;
     border-color: gold;
     border-width: 1px;
+    border-radius: 3rem;
 }
 p{
     color: gold;
@@ -52,8 +53,8 @@ header{
     border-radius: 3rem;
     }
 #cocktailImage{
-    width: 475px;
-    border-radius: 45px;
+    width: 45vh;
+    border-radius: 3rem;
     border: solid;
     border-color: gold;
     border-width: 2px;

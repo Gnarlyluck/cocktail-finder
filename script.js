@@ -149,6 +149,8 @@ const displayCocktail = async (userInput) => {
         console.log('create cocktail not currently wokring')
     }
 }
+
 document.querySelector('input').addEventListener('input', updateValue)
 document.querySelector('.cocktailbtn').addEventListener('click', getCocktail)
-document.querySelector('.randomCocktail').addEventListener('click', randomCocktail)    
+document.querySelector('.randomCocktail').addEventListener('click', randomCocktail)   
+document.querySelector('#cocktailInput').addEventListener('click', alert('please click "your drink is waiting" to search for cocktails'))
